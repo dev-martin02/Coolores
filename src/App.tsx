@@ -1,5 +1,4 @@
 import { useState } from "react";
-import "./App.css";
 import {
   generateAnalogousPalette,
   generateComplementaryPalette,
@@ -11,6 +10,12 @@ import {
 function App() {
   const [color, setColor] = useState("#8080ff");
   const [activePalette, setActivePalette] = useState<string | null>(null);
+  const [displayHexName, setDisplayHexName] = useState(true);
+
+  function toggleHexname() {
+    setDisplayHexName(!displayHexName);
+  }
+
   // Array of palette configurations
   const palettes = [
     {
@@ -75,7 +80,13 @@ function App() {
             {activePalette === palette.name && (
               <div className="colorPalette">
                 {palette.generator().map((colorValue, index) => (
-                  <div key={index} style={{ backgroundColor: colorValue }} />
+                  <div
+                    key={index}
+                    style={{ backgroundColor: colorValue }}
+                    onClick={() => toggleHexname()}
+                  >
+                    {displayHexName && colorValue}
+                  </div>
                 ))}
               </div>
             )}

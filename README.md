@@ -50,7 +50,6 @@ An interactive tool that demonstrates how your selected colors will look in a re
 
 - [ ] Wizard functionality
 - [ ] Color Psychology & Usage Guide
-- [ ] Export palettes to different formats (CSS, SCSS, Tailwind)
 - [ ] Save and share color combinations
 - [ ] Template library with pre-made color schemes
 

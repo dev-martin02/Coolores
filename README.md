@@ -64,7 +64,6 @@ An interactive tool that demonstrates how your selected colors will look in a re
 
 - React with TypeScript
 - Modern CSS with animations
-- Color manipulation libraries
 - Real-time preview rendering
 
 ## 🎯 Project Status

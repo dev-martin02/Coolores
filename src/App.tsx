@@ -10,10 +10,11 @@ import {
 function App() {
   const [color, setColor] = useState("#8080ff");
   const [activePalette, setActivePalette] = useState<string | null>(null);
-  const [displayHexName, setDisplayHexName] = useState(true);
+  const [isHovering, setIsHovering] = useState<number | null>(null);
 
-  function toggleHexname() {
-    setDisplayHexName(!displayHexName);
+  function ClipboardCopy(colorValue: string) {
+    navigator.clipboard.writeText(colorValue);
+    alert("Color was copied!!");
   }
 
   // Array of palette configurations
@@ -83,9 +84,12 @@ function App() {
                   <div
                     key={index}
                     style={{ backgroundColor: colorValue }}
-                    onClick={() => toggleHexname()}
+                    // onClick={() => toggleHexname()}
+                    onMouseEnter={() => setIsHovering(index)}
+                    onMouseLeave={() => setIsHovering(null)}
+                    onClick={() => ClipboardCopy(colorValue)}
                   >
-                    {displayHexName && colorValue}
+                    {isHovering === index && colorValue}
                   </div>
                 ))}
               </div>

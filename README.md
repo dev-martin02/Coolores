@@ -94,5 +94,3 @@ While the project is in early stages, we welcome:
 ---
 
 _This project is part of an ongoing effort to simplify the color selection process for web development and design projects. More features and improvements are being added regularly._
-
-I've created a comprehensive README that outlines your project's features and future plans. Would you like me to expand on any particular section or add more specific technical details?

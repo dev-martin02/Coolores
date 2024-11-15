@@ -12,7 +12,7 @@ function App() {
   const [activePalette, setActivePalette] = useState<string | null>(null);
   const [isHovering, setIsHovering] = useState<number | null>(null);
 
-  function ClipboardCopy(colorValue: string) {
+  function clipboardCopy(colorValue: string) {
     navigator.clipboard.writeText(colorValue);
     alert("Color was copied!!");
   }
@@ -84,12 +84,13 @@ function App() {
                   <div
                     key={index}
                     style={{ backgroundColor: colorValue }}
-                    // onClick={() => toggleHexname()}
                     onMouseEnter={() => setIsHovering(index)}
                     onMouseLeave={() => setIsHovering(null)}
-                    onClick={() => ClipboardCopy(colorValue)}
+                    onClick={() => clipboardCopy(colorValue)}
                   >
-                    {isHovering === index && colorValue}
+                    {isHovering === index && (
+                      <span className="hexName">{colorValue}</span>
+                    )}
                   </div>
                 ))}
               </div>

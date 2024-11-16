@@ -1,5 +1,5 @@
 import colorGuide from "../../colorsMeaning.json";
-import "./ColorMeaning.css";
+import "./colorMeaning.css";
 
 export function ColorMeaning() {
   return (

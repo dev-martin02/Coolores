@@ -1,0 +1,97 @@
+{
+  "colorGroups": [
+    {
+      "group": "Reds",
+      "mainColorHex": "#FF0000",
+      "psychology": "Associated with passion, energy, and urgency. Evokes excitement and strong emotions.",
+      "commonUses": [
+        "Sales promotions",
+        "Emergency alerts",
+        "Restaurants to stimulate appetite"
+      ],
+      "examples": [
+        { "name": "Maroon", "hex": "#800000" },
+        { "name": "Crimson", "hex": "#DC143C" }
+      ]
+    },
+    {
+      "group": "Blues",
+      "mainColorHex": "#0000FF",
+      "psychology": "Conveys trust, stability, and calmness. Often represents reliability and professionalism.",
+      "commonUses": ["Corporate logos", "Healthcare", "Tech industries"],
+      "examples": [
+        { "name": "Sky Blue", "hex": "#87CEEB" },
+        { "name": "Navy", "hex": "#000080" }
+      ]
+    },
+    {
+      "group": "Greens",
+      "mainColorHex": "#008000",
+      "psychology": "Represents growth, nature, and tranquility. Often associated with health and sustainability.",
+      "commonUses": ["Organic products", "Financial brands", "Healthcare"],
+      "examples": [
+        { "name": "Mint", "hex": "#98FF98" },
+        { "name": "Emerald", "hex": "#50C878" }
+      ]
+    },
+    {
+      "group": "Yellows",
+      "mainColorHex": "#FFFF00",
+      "psychology": "Symbolizes happiness, positivity, and warmth. Can also represent caution or attention.",
+      "commonUses": [
+        "Children’s products",
+        "Traffic signs",
+        "Marketing promotions"
+      ],
+      "examples": [
+        { "name": "Gold", "hex": "#FFD700" },
+        { "name": "Mustard", "hex": "#FFDB58" }
+      ]
+    },
+    {
+      "group": "Oranges",
+      "mainColorHex": "#FFA500",
+      "psychology": "Encourages enthusiasm, creativity, and warmth. Combines the energy of red and cheerfulness of yellow.",
+      "commonUses": [
+        "Call-to-action buttons",
+        "Sports branding",
+        "Food and beverage"
+      ],
+      "examples": [
+        { "name": "Coral", "hex": "#FF7F50" },
+        { "name": "Burnt Orange", "hex": "#CC5500" }
+      ]
+    },
+    {
+      "group": "Purples",
+      "mainColorHex": "#800080",
+      "psychology": "Evokes luxury, creativity, and mystery. Often associated with royalty and imagination.",
+      "commonUses": ["Beauty products", "Luxury goods", "Art and design"],
+      "examples": [
+        { "name": "Lavender", "hex": "#E6E6FA" },
+        { "name": "Plum", "hex": "#DDA0DD" }
+      ]
+    },
+    {
+      "group": "Neutrals",
+      "mainColorHex": "#808080",
+      "psychology": "Neutral and versatile, often used for balance and elegance. Can evoke professionalism or minimalism.",
+      "commonUses": ["Corporate materials", "Modern designs", "Tech branding"],
+      "examples": [
+        { "name": "Black", "hex": "#000000" },
+        { "name": "White", "hex": "#FFFFFF" },
+        { "name": "Beige", "hex": "#F5F5DC" }
+      ]
+    },
+    {
+      "group": "Pinks",
+      "mainColorHex": "#FFC0CB",
+      "psychology": "Associated with compassion, playfulness, and love. Often evokes softness and femininity.",
+      "commonUses": ["Beauty brands", "Romantic themes", "Children's products"],
+      "examples": [
+        { "name": "Rose", "hex": "#FF007F" },
+        { "name": "Salmon", "hex": "#FA8072" }
+      ]
+    }
+  ]
+}

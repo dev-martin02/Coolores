@@ -1,8 +1,9 @@
 import { useState } from "react";
 import "./userColor.css";
+import { useMainStore } from "../../../store/mainStore";
 
 export default function UserColor() {
-  const [color, setColor] = useState("#8080ff");
+  const { userColor, updateColor } = useMainStore();
 
   return (
     <div className="primaryColorContainer">
@@ -10,13 +11,13 @@ export default function UserColor() {
       <label
         htmlFor="mainColor"
         className="colorPickerLabel"
-        style={{ backgroundColor: color }}
+        style={{ backgroundColor: userColor }}
       ></label>
 
       <input
         type="color"
-        value={color}
-        onChange={(e) => setColor(e.target.value)}
+        value={userColor}
+        onChange={(e) => updateColor(e.target.value)}
         id="mainColor"
       />
     </div>

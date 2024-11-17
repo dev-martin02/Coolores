@@ -7,10 +7,13 @@ import {
   generateTriadicPalette,
 } from "../../../functions/colorCombinations";
 import "./palette.css";
+import { useMainStore } from "../../../store/mainStore";
 
 export function PaletteCombination() {
   const [isHovering, setIsHovering] = useState<number | null>(null);
   const [activePalette, setActivePalette] = useState<string | null>(null);
+
+  const { userColor } = useMainStore();
 
   function clipboardCopy(colorValue: string) {
     navigator.clipboard.writeText(colorValue);
@@ -25,36 +28,34 @@ export function PaletteCombination() {
     }
   };
 
-  const color = "#fff";
-
-  // Array of palette configurations
-  const palettes = [
+  // Palette
+  const combinationsArr = [
     {
       name: "Monochromatic Palette",
-      generator: () => generateMonoPalette(color, 4),
+      generator: () => generateMonoPalette(userColor, 4),
     },
     {
       name: "Analogous Palette",
-      generator: () => generateAnalogousPalette(color, 5),
+      generator: () => generateAnalogousPalette(userColor, 5),
     },
     {
       name: "Complementary Palette",
-      generator: () => generateComplementaryPalette(color),
+      generator: () => generateComplementaryPalette(userColor),
     },
     {
       name: "Triadic Palette",
-      generator: () => generateTriadicPalette(color),
+      generator: () => generateTriadicPalette(userColor),
     },
     {
       name: "Split Complementary Palette",
-      generator: () => generateSplitComplementaryPalette(color),
+      generator: () => generateSplitComplementaryPalette(userColor),
     },
   ];
 
   return (
     <div className="colorCombinationSection">
       <h2>Color Combinations</h2>
-      {palettes.map((palette) => (
+      {combinationsArr.map((palette) => (
         <div key={palette.name}>
           <h3
             onClick={() => togglePalette(palette.name)}

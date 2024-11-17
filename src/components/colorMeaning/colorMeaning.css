@@ -1,0 +1,62 @@
+.colorGroup {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  padding: 0.4rem 0;
+}
+
+.colorMain {
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  display: flex;
+  gap: 2.5rem;
+  width: 90%;
+  padding: 2rem;
+  background: white;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s ease;
+}
+
+.colorSample {
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+}
+
+.colorInfo section {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+
+.articleHeading {
+  font-family: "Georgia", serif;
+  font-size: 1rem;
+  font-weight: normal;
+  color: #2c3e50;
+  padding-bottom: 0.3rem;
+  border-bottom: 2px solid #e0e0e0;
+  margin: 0;
+}
+
+.groupSample {
+  display: flex;
+  gap: 1rem;
+  margin-top: 10px;
+}
+.sampleColor {
+  width: 62px;
+  height: 50px;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 500px) {
+  .colorMain {
+    flex-direction: column;
+    padding: 1rem;
+  }
+  .colorMain h2 {
+    margin-top: 0;
+  }
+}

@@ -5,7 +5,7 @@ import colorGuide from "./colorsMeaning.json";
 import { useMainStore } from "./store/mainStore";
 
 function App() {
-  const { currentColorGuide, setColorGuide } = useMainStore();
+  const { setColorGuide } = useMainStore();
 
   function getGroupIndex(groupName: string) {
     const indexColor = colorGuide.colorGroups.findIndex(

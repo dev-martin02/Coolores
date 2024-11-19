@@ -1,4 +1,3 @@
-import { PaletteCombination } from "./components/chooseColor/colorCombination/PaletteCombination";
 import UserColor from "./components/chooseColor/userColor/userColor";
 import { ColorMeaning } from "./components/colorMeaning/ColorMeaning";
 import colorGuide from "./colorsMeaning.json";

@@ -1,5 +1,8 @@
 .colorCombinationSection {
   margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
 .colorCombinationSection h2 {
@@ -15,6 +18,13 @@
   font-weight: 500;
   color: #555;
   margin: 1.2rem 0 0.8rem 0;
+}
+
+#combinationHeading {
+  font-size: 1.3rem;
+  border-bottom: 2px solid;
+  font-weight: 700;
+  color: black;
 }
 
 .colorPalette {
@@ -88,6 +98,8 @@
   .colorCombinationSection {
     margin-top: 0;
     width: 50%;
+    max-height: 300px; /* Adjust this value as needed */
+    overflow-y: auto;
   }
 
   .colorCombinationSection h2 {

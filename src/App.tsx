@@ -16,13 +16,12 @@ function App() {
   }
 
   return (
-    <main>
+    <main id="mainContent">
       <section className="sectionColor">
         <UserColor />
-        <PaletteCombination />
       </section>
 
-      <section>
+      <section id="meaningSection">
         <ColorMeaning />
         <div className="colorSelection">
           {colorGuide.colorGroups.map(({ mainColorHex, group }) => (

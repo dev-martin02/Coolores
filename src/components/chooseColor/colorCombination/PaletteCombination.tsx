@@ -54,7 +54,7 @@ export function PaletteCombination() {
 
   return (
     <div className="colorCombinationSection">
-      <h2>Color Combinations</h2>
+      <h3 id="combinationHeading">Color Combinations</h3>
       {combinationsArr.map((palette) => (
         <div key={palette.name}>
           <h3
